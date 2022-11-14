@@ -1,12 +1,10 @@
-type Add = {
-  (a: number, b: number): number,
-  (a: number, b: number, c: number): number
+type SuperPrint = {
+  <TypePlaceholder>(arr: TypePlaceholder[]): TypePlaceholder
 }
 
-const add: Add = (a, b, c?: number) => {
-  if (c) return a + b + c
-  return a + b
-}
+const superPrint: SuperPrint = (arr) => arr[0]
 
-add(1, 2)
-add(1, 2, 3)
+const a = superPrint([1, 2, 3, 4])
+const b = superPrint([true, false, true, true])
+const c = superPrint(["a", "b", "c"])
+const d = superPrint([1, 2, true, false, "hello"])
