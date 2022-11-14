@@ -1,8 +1,20 @@
-type SuperPrint = <T, V>(a: T[], b: V) => T
+type Player<E> = {
+  name: string
+  extraInfo: E
+}
 
-const superPrint: SuperPrint = (a) => a[0]
+type NicoExtra = {
+  favFood: string
+}
 
-const a = superPrint([1, 2, 3, 4], "x")
-const b = superPrint([true, false, true, true], 3)
-const c = superPrint(["a", "b", "c"], false)
-const d = superPrint([1, 2, true, false, "hello"], [3, 2])
+const nico: Player<NicoExtra> = {
+  name: "nico",
+  extraInfo: {
+    favFood: "kimchi"
+  }
+}
+
+const lynn: Player<null> = {
+  name: "lynn",
+  extraInfo: null
+}
