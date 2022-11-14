@@ -1,0 +1,22 @@
+{
+  "name": "nestjs-project",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yjinjo/nestjs-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yjinjo/nestjs-project/issues"
+  },
+  "homepage": "https://github.com/yjinjo/nestjs-project#readme",
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  }
+}
