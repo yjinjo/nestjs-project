@@ -1,3 +1,9 @@
 // index.ts
 
-document.
+import { init, exit } from "myPackage";
+
+init({
+  url: "true"
+})
+
+exit(1);
