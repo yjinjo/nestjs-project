@@ -1,9 +1,12 @@
-function add(a: number, b: number) {
+type Add = {
+  (a: number, b: number): number,
+  (a: number, b: number, c: number): number
+}
+
+const add: Add = (a, b, c?: number) => {
+  if (c) return a + b + c
   return a + b
 }
 
-const add2 = (a: number, b: number) => a + b
-
-type Add = (a: number, b: number) => number;
-
-const add3: Add = (a, b) => a + b;
+add(1, 2)
+add(1, 2, 3)
